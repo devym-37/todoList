@@ -1,0 +1,51 @@
+.bounder {
+  display: block;
+  width: 600px;
+  margin: 0 auto;
+  position: relative;
+  background: rgba(20, 20, 20, 0.7);
+  height: 800px;
+  color: white;
+
+  padding: 60px 10px 10px 10px;
+  overflow: hidden;
+}
+.navlist {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ullist {
+  display: flex;
+  margin-top: 10px;
+  padding: 0px;
+}
+.lilist {
+  display: flex;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  justify-content: center;
+  padding: 0px 10px 0px 10px;
+  margin: 5px;
+  border: 2px solid;
+}
+.alist {
+  display: flex;
+  color: white;
+  font-size: 15px;
+  align-items: center;
+  justify-content: center;
+  text-decoration-line: none;
+}
+.viewlist {
+  display: flex;
+  margin: 10px;
+  height: 50px;
+  border: 3px solid;
+}
