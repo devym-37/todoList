@@ -42,9 +42,8 @@ export default class extends React.Component {
   }
 
   render() {
-    const { todoText, taskList, todoList } = this.state;
+    const { todoText, taskList } = this.state;
     const { onChange, addTodo, removeTodo } = this;
-    console.log(taskList);
     return (
       <div className="viewEntry">
         <input

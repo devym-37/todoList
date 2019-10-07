@@ -14,12 +14,14 @@ export default class extends React.Component {
     this.searchTodo = this.searchTodo.bind(this);
   }
 
-  searchTodo(list) {
+  searchTodo() {
     const { todoText, todoList } = this.state;
     if (todoText.length === 0) return alert("내용을 입력하세요");
     const searchFilter = [...todoList];
-    searchFilter.filter(item => item.text.includes(list));
-    this.setState({ todoList: searchFilter });
+    const filtertodo = searchFilter.filter(item =>
+      item.text.includes(todoText)
+    );
+    this.setState({ todoList: filtertodo });
   }
 
   onChange(e) {
@@ -49,6 +51,7 @@ export default class extends React.Component {
               text={todos.text}
               complete={todos.complete}
               onChange={onChange}
+              search={searchTodo}
               value={todos.id}
               key={todos.id}
             />

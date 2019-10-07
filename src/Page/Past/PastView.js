@@ -26,7 +26,7 @@ export default class extends React.Component {
   }
 
   render() {
-    const { todoList, taskList } = this.state;
+    const { todoList } = this.state;
     const { returnTodo } = this;
     return (
       <div className="viewEntry">
