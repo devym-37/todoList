@@ -1,1 +1,3 @@
-export default () => "PastList";
+import PastView from "./PastView";
+
+export default PastView;

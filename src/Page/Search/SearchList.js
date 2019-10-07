@@ -1,1 +1,2 @@
-export default () => "SearchList";
+import SearchView from "./SearchView";
+export default SearchView;
