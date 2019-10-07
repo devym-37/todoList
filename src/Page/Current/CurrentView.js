@@ -12,15 +12,12 @@ export default class extends React.Component {
       todoList: fakeList, // 화면 출력을 위한 fakedata
       taskList: taskList // 실제 데이터베이스
     };
-    this.todoslist = this.todoslist.bind(this);
+
     this.addTodo = this.addTodo.bind(this);
     this.onChange = this.onChange.bind(this);
+    this.removeTodo = this.removeTodo.bind(this);
   }
-  todoslist(text) {
-    this.setState({
-      todoText: ""
-    });
-  }
+
   addTodo() {
     const { todoText, taskList } = this.state;
     if (todoText.length === 0) return alert("내용을 입력하세요");
@@ -32,12 +29,21 @@ export default class extends React.Component {
     const newTodo = [...taskList, todos];
     this.setState({ taskList: newTodo, todoText: "" });
   }
+
+  removeTodo(list) {
+    const { taskList } = this.state;
+    const filterTodo = [...taskList];
+    filterTodo[list].complete = !taskList[list].complete;
+    this.setState({ taskList: filterTodo });
+  }
+
   onChange(e) {
     this.setState({ todoText: e.target.value });
   }
+
   render() {
-    const { todoText, taskList } = this.state;
-    const { onChange, addTodo } = this;
+    const { todoText, taskList, todoList } = this.state;
+    const { onChange, addTodo, removeTodo } = this;
     console.log(taskList);
     return (
       <div className="viewEntry">
@@ -59,6 +65,8 @@ export default class extends React.Component {
               text={todos.text}
               complete={todos.complete}
               onChange={onChange}
+              removeTodo={removeTodo}
+              value={todos.id}
               key={todos.id}
             />
           ))}

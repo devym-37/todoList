@@ -1,19 +1,10 @@
 import React from "react";
 
-const SearchViewEntry = ({ todoText, complete, onChange, addTodo }) => (
+const SearchViewEntry = ({ text, complete, onChange }) => (
   <div>
-    <input
-      className="input"
-      type="text"
-      placeholder="Search Todo"
-      value={todoText}
-      onChange={onChange}
-      onKeyDown={e => (e.keyCode === 13 ? addTodo : null)}
-    />
-
-    <button className="inputBtn">input</button>
-    <span className="lilist">{todoText}</span>
-    <a className="lilist">{complete}</a>
+    <div className="todolist">
+      <div className="textbox">{text}</div>
+    </div>
   </div>
 );
 

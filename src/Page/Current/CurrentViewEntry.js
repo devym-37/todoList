@@ -1,9 +1,12 @@
 import React from "react";
 
-const CurrentViewEntry = props => (
+const CurrentViewEntry = ({ text, complete, removeTodo, value }) => (
   <div>
     <div className="todolist">
-      <div className="textbox">{props.complete !== true ? props.text : ""}</div>
+      <div className="textbox">{complete !== true ? text : ""}</div>
+      <button className="textBtn" onClick={() => removeTodo(value)}>
+        🎁
+      </button>
     </div>
   </div>
 );

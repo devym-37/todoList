@@ -1,9 +1,12 @@
 import React from "react";
 
-const PastViewEntry = props => (
+const PastViewEntry = ({ text, complete, value, reTodo }) => (
   <div>
     <div className="todolist">
-      <div className="textbox">{props.complete === true ? props.text : ""}</div>
+      <div className="textbox">{complete === true ? text : ""}</div>
+      <button className="textBtn" onClick={() => reTodo(value)}>
+        🏆
+      </button>
     </div>
   </div>
 );

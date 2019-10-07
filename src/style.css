@@ -3,7 +3,7 @@
   width: 600px;
   margin: 0 auto;
   position: relative;
-  background: rgba(20, 20, 20, 0.7);
+  background: #cce6ff;
   height: 500px;
   color: white;
   border-radius: 15px;
@@ -73,7 +73,7 @@
   border-radius: 5px;
   border: 2px solid skyblue;
   background-color: rgba(0, 0, 0, 0);
-  color: skyblue;
+  color: white;
 }
 
 .todolist {
@@ -81,7 +81,7 @@
   margin-top: 10px;
   display: flex;
   position: relative;
-  width: 410px;
+  width: 350px;
   height: 30px;
   border-radius: 5px;
   border: 2px solid #f2f2f2;
@@ -97,4 +97,13 @@
   font-weight: 500;
   text-align: center;
   justify-content: center;
+}
+
+.textBtn {
+  margin-left: 350px;
+  position: absolute;
+  font-size: 25px;
+  border: transparent;
+  background-color: rgba(0, 0, 0, 0);
+  color: skyblue;
 }
