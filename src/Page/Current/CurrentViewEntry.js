@@ -1,19 +1,11 @@
 import React from "react";
 
-const CurrentViewEntry = ({ todoText, complete, onChange, addTodo }) => (
+const CurrentViewEntry = props => (
   <div>
-    <input
-      className="input"
-      type="text"
-      placeholder="New Todo"
-      value={todoText}
-      onChange={onChange}
-      onKeyDown={e => (e.keyCode === 13 ? addTodo : null)}
-    />
-
-    <button className="inputBtn">input</button>
-    <span className="lilist">{todoText}</span>
-    <a className="lilist">{complete}</a>
+    <div className="todolist">
+      <div className="textbox">{props.complete !== true ? props.text : ""}</div>
+      <button className="checkBtn">Check</button>
+    </div>
   </div>
 );
 

@@ -4,9 +4,9 @@
   margin: 0 auto;
   position: relative;
   background: rgba(20, 20, 20, 0.7);
-  height: 800px;
+  height: 500px;
   color: white;
-  border-radius: 1px;
+  border-radius: 15px;
   padding: 60px 10px 10px 10px;
   overflow: hidden;
 }
@@ -22,22 +22,19 @@
 }
 .ullist {
   display: flex;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 0px;
 }
 .lilist {
   display: flex;
   width: 100px;
-  height: 50px;
+  height: 30px;
   text-align: center;
   justify-content: center;
-  padding: 0px 10px 0px 10px;
-  margin: 5px;
+  padding: 0px 8px 0px 8px;
+  margin: 8px;
   border-bottom-width: 1px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 10px;
   border: 2px solid skyblue;
 }
 .alist {
@@ -52,26 +49,17 @@
   display: flex;
   margin: 10px;
   height: 50px;
-  border-bottom-width: 1px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
-  border: 2px solid skyblue;
 }
 .input {
-  margin-top: 20px;
+  margin-left: 50px;
   width: 400px;
   height: 30px;
-  padding: 20;
+  padding-left: 10px;
   border-bottom-color: white;
   border-bottom-width: 1px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   border: 2px solid skyblue;
-  font: size 20px;
+  font-size: 20px;
 }
 .inputBtn {
   margin-top: 20px;
@@ -81,11 +69,39 @@
   justify-content: center;
   width: 55px;
   height: 40px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   border: 2px solid skyblue;
   background-color: rgba(0, 0, 0, 0);
   color: skyblue;
+}
+
+.todolist {
+  margin-left: 50px;
+  margin-top: 10px;
+  display: flex;
+  position: relative;
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid #f2f2f2;
+  background-color: #f2f2f2;
+}
+
+.textbox {
+  position: relative;
+  padding-left: 10px;
+  padding-top: 4px;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+  text-align: center;
+  justify-content: center;
+}
+.checkBtn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 2px solid skyblue;
+  background-color: rgba(0, 0, 0, 0);
 }
