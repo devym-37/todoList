@@ -1,8 +1,10 @@
 import React from "react";
 
-const PastViewEntry = ({ todoText, complete }) => (
+const PastViewEntry = props => (
   <div>
-    <span className="lilist">{todoText}</span>
+    <div className="todolist">
+      <div className="textbox">{props.complete === true ? props.text : ""}</div>
+    </div>
   </div>
 );
 
